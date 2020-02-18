@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 200px;
+    margin: 10px;
+
+    &:hover {
+      border: 4px solid blue;
+    }
+  }
+
+  .textInput {
+    margin-bottom: 10px;
+   
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+}
