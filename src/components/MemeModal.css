@@ -1,0 +1,47 @@
+.MemeModal {
+  
+      z-index: 5;
+      background: #252735;
+      color: orange;
+      border: solid 10px black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      width: 25rem;
+      font-size: 16px;
+      text-align: center;      
+    
+    
+    button {
+      margin: 1rem;
+    }
+}
+
+.meme {
+
+    height: 200px;
+    position: relative;
+    display: inline-block;
+  
+    img {
+      height: 200px;
+    }
+  
+    .headline {
+      color: white;
+      position: absolute;
+      z-index: 999;
+      text-align: center;
+      width: 100%
+    }
+  
+    .caption {
+      color: white;
+      position: absolute;
+      top: 75%;
+      width: 100%;
+      text-align: center;
+    }
+  }

@@ -11,7 +11,6 @@ export default function reducer(state = initialState, action) {
       return { ...state, loading: true };
     case FETCH_POST_MEME:
       return { ...state, loading: false, meme: action.payload };
-
     default:
       return state;
   }

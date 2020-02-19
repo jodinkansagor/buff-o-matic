@@ -10,7 +10,6 @@ const MemeList = () => {
   const dispatch = useDispatch();
   const loading = useSelector(isloadingGetMeme);
   const memeArray = useSelector(getGetMeme);
-  console.log(memeArray);
 
   useEffect(() => {
     dispatch(fetchGetMeme());
@@ -22,7 +21,11 @@ const MemeList = () => {
     <li key={meme._id}>
       <MemeItem {...meme} />
     </li>
-  ));
+  )).sort((a, b) => {
+    if(a.key > b.key) return -1;
+    if(a.key < b.key) return 1;
+    return 0;
+  });
 
   return (
     <section className={styles.list}>
